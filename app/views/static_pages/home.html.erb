@@ -15,8 +15,7 @@
 
     </head>
     <body>
-
-      <div id="nav-bar-holder">
+    <div id="nav-bar-holder">
         <span class="nav-item">
           <a href="#linktotown" rel="" id="anchor1" class="no-color">Our Town</a>
         </span>
@@ -28,14 +27,16 @@
         </span>
         <span class="nav-item">
           <a href="/static_pages/fun" class="no-color">Fun</a>
-        </span>
-        <span class="nav-item">
-        <form class="navbar-search pull-left">
-        <input type="text" class="search-query" placeholder="Search">
-        </form>
-        </span>
-      </div>
+        <BR><BR>
+          
+        </BRL></span>
+          <%= form_tag("static_pages/fun", method: 'get', class: 'navbar-form navbar-right') do %>
+          <%= search_field_tag 'search', nil, class: 'form-control', placeholder: 'Search'  %>
+          <%= submit_tag "Submit", class: 'btn btn-default', :name => nil %>
+          <% end %>
 
+      </div>
+<BR><BR>
       <div id="town-image">
         <%= link_to(image_tag('town.jpg', :alt => "town", :size => "1000x500"), "/static_pages/home") %></div>
       </div>
