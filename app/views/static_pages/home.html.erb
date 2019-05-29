@@ -27,14 +27,7 @@
         </span>
         <span class="nav-item">
           <a href="/static_pages/fun" class="no-color">Fun</a>
-        <BR><BR>
-          
         </BRL></span>
-          <%= form_tag("static_pages/fun", method: 'get', class: 'navbar-form navbar-right') do %>
-          <%= search_field_tag 'search', nil, class: 'form-control', placeholder: 'Search'  %>
-          <%= submit_tag "Submit", class: 'btn btn-default', :name => nil %>
-          <% end %>
-
       </div>
 <BR><BR>
       <div id="town-image">
@@ -44,6 +37,7 @@
       <div id="product-design-header">
         <a class="no-color" name="linktotown" id="linktotown"></a>
         <div class="big">LEGO TOWN</div>
+        <%= link_to "Are you interested?", signup_path, class: "btn btn-lg btn-primary" %>
       </div>
 
       <p>
